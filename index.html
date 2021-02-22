@@ -79,7 +79,12 @@
         /* Universal styles for links and stuff */
         a { color: #229efd; font-weight:bold; }
         a:hover { color: #fd6350; text-decoration: none;}
-        a.button:hover { background-color: #fd6350 !important; border: 1px solid #fd6350 !important;}
+        a.button { transition: all 0.2s ease;}
+        a.button:hover { 
+            background-color: #fd6350 !important; 
+            border: 1px solid #fd6350 !important;
+            box-shadow: 0px, 12px, 24px, rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);}
 
         /* Responsive styles */
         @media screen and (max-width: 600px) {
@@ -95,6 +100,25 @@
                 width: 100% !important;
             }
         }
+
+        /* CSS animations */
+        @keyframes fade-in {
+            from {opacity: 0; transform: scale(0.8);}
+            to {opacity: 1; transform: scale(1);}
+        }
+        .fade { animation: 1s 1 fade-in;}
+
+        /* interactive elements */
+        input { display: none;}
+        label { cursor: pointer;}
+        .slide { display: none;}
+
+        #slide1:checked ~ .slide1,
+        #slide2:checked ~ .slide2,
+        #slide3:checked ~ .slide3 {
+            display: block;
+        }
+
     </style>
 </head>
 
@@ -121,13 +145,12 @@
                                 <!-- Logo image -->
                                 <tr>
                                     <td align="center" style="padding:10px;">
-                                        <img src="https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2FLogo_Michael_Scott.svg%20(1).png?v=1613416902446"
+                                        <img class="fade" src="https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2FLogo_Michael_Scott.svg%20(1).png?v=1613416902446"
                                             alt="Michael Scott Paper Company Logo"
                                             style="max-width:50%; min-width:100px; width:50%; display:block;" />
                                     </td>
                                 </tr>
                                 <!-- Headline -->
-                                <!-- Hero image-->
                                 <tr>
                                     <td align="center" bgcolor="#1e215a"
                                         background="https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2Fnistcyber_banner-11.19.18-am.png?v=1613422565424"
@@ -143,19 +166,39 @@
                     <tr style="background-color:#DCE1E3;">
                         <td>
                             <!-- Body Content table -->
+                            <!-- Body copy -->
                             <table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation"
                                 style="background-color:#DCE1E3; color:black; max-width:100%; min-width:100px; width:100%;">
-                                <!-- Body copy -->
+                                <!-- Hero image -->
                                 <tr>
                                     <td align="center" style="line-height: 1.6; padding: 10px;">
-                                        <h2 style="font-size: 20px;">Lorem ipsum</h2>
-                                        <p style="text-align: left; font-size:16px;">"Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                            anim id est laborum."</p>
+                                        <img src="images/heroimage.jpg" style="max-width:100%; min-width:100px; width:100%; display:block;" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <!-- radio triggers for content -->
+                                        <input type="radio" name="slides" id="slide1" checked>
+                                        <input type="radio" name="slides" id="slide2">
+                                        <input type="radio" name="slides" id="slide3">
+
+                                        <label for="slide1" class="slide-label" style="border: 2px solid black; display: inline-block; margin: 10px; padding: 4px 20px;">slide 1</label>
+                                        <label for="slide2" class="slide-label" style="border: 2px solid black; display: inline-block; margin: 10px; padding: 4px 20px;">slide 2</label>
+                                        <label for="slide3" class="slide-label" style="border: 2px solid black; display: inline-block; margin: 10px; padding: 4px 20px;">slide 3</label>
+
+                                        <!-- slide content -->
+                                        <div class="slide slide1" style="background-color: #aeaeae; padding: 20px;">
+                                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                                        </div>
+                                        <div class="slide slide2" style="background-color: #aeaeae; padding: 20px;">
+                                            <p>i like big butts and i cannot lie</p>
+                                        </div>
+                                        <div class="slide slide3" style="background-color: #aeaeae; padding: 20px;">
+                                            <p>praise yeetus</p>
+                                        </div>
                                     </td>
                                 </tr>
                                 <!-- two column row -->
@@ -163,7 +206,7 @@
                                     <td style="padding:15px;">
                                         <!-- Left column -->
                                         <table align="left" border="0" cellpadding="0" cellspacing="0" class="block"
-                                            role="presentation" width="48%">
+                                            role="presentation" width="28%">
                                             <tr>
                                                 <td>
                                                     <!-- put some poll here maybe-->
@@ -172,7 +215,7 @@
                                         </table>
                                         <!-- Right column -->
                                         <table align="right" border="0" cellpadding="0" cellspacing="0" class="block"
-                                            role="presentation" width="48%">
+                                            role="presentation" width="68%">
                                             <tr>
                                                 <td style="line-height: 1.6;">
                                                     <h2 style="font-size:16px; margin: 0 0 20px 0;">
@@ -263,15 +306,20 @@
                                         <table align="center" border="0" cellspacing="0" cellpadding="0"
                                             style="margin: 20px auto;">
                                             <tr>
-                                                <td bgcolor="#0063af" style="border-radius:3px;">
+                                                <td style="border-radius:3px;">
                                                     <a class="button" href="https://theofficedundermifflin.fandom.com/wiki/Ryan_Howard"
-                                                        target="_blank" style="font-size: 18px; font-weight: bold; color:#ffffff; text-decoration: none; border-radius: 3px; padding: 12px 18px;
+                                                        target="_blank" style="background-color: #0063af; font-size: 18px; font-weight: bold; color:#ffffff; text-decoration: none; border-radius: 3px; padding: 12px 18px;
                                                                 border: 1px solid #0063af; display: inline-block;">
                                                         Read more
                                                     </a>
                                                 </td>
                                             </tr>
                                         </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
                                     </td>
                                 </tr>
                             </table>
