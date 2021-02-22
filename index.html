@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* GMAIL BLUE LINKS */
+        u+#body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* SAMSUNG MAIL BLUE LINKS */
+        #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* Universal styles for links and stuff */
+        a { color: #229efd; font-weight:bold; }
+        a:hover { color: #fd6350; text-decoration: none;}
+        a.button:hover { background-color: #fd6350 !important; border: 1px solid #fd6350 !important;}
+
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+
+            /* change fixed table width from 600px to 100% for mobile users */
+            .mobile {
+                width: 100% !important;
+            }
+
+            /* display block and 100% width are used for stacking columns */
+            .block {
+                display: block !important;
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body id="body" style="margin: 0 !important; padding: 0 !important;">
+
+    <!-- Main container table -->
+    <!-- Used this website as reference for table layout https://templates.mailchimp.com/development/html/ -->
+    <!-- Order of tables: fluid table, fixed table, fluid table, fixed table -->
+    <table border="0" cellspacing="0" cellpadding="0" align="center" height="100%" width="100%"
+        style="background-color: #004e7c;" role="presentation">
+        <tr>
+            <td align="center">
+                <!-- Email content table -->
+                <table border="0" cellspacing="0" cellpadding="0" role="presentation" class="mobile"
+                    style="font-family:Arial, Helvetica, sans-serif; background-color:#DCE1E3; max-width: 600px;">
+                    <!-- Header row -->
+                    <tr style="background-color:#DCE1E3;">
+                        <td bgcolor="#DCE1E3"
+                            background="https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2Fheroimage_blue.jpg?v=1613418194233"
+                            style="padding:10px; background: #DCE1E3 url('https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2Fheroimage_blue.jpg?v=1613418194233'); background-size: 100%;">
+                            <!-- Header content table -->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation"
+                                style="max-width:100%; min-width:100px; width:100%; display:block;">
+                                <!-- Logo image -->
+                                <tr>
+                                    <td align="center" style="padding:10px;">
+                                        <img src="https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2FLogo_Michael_Scott.svg%20(1).png?v=1613416902446"
+                                            alt="Michael Scott Paper Company Logo"
+                                            style="max-width:50%; min-width:100px; width:50%; display:block;" />
+                                    </td>
+                                </tr>
+                                <!-- Headline -->
+                                <!-- Hero image-->
+                                <tr>
+                                    <td align="center" bgcolor="#1e215a"
+                                        background="https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2Fnistcyber_banner-11.19.18-am.png?v=1613422565424"
+                                        style="color:#ffffff; padding:5px; background: #1e215a url('https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2Fnistcyber_banner-11.19.18-am.png?v=1613422565424'); background-size: 100%;">
+                                        <h1 style="font-size:40px; font-style: italic; text-align:center;">SCOTT'S
+                                            THOUGHTS</h1>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Body content row -->
+                    <tr style="background-color:#DCE1E3;">
+                        <td>
+                            <!-- Body Content table -->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation"
+                                style="background-color:#DCE1E3; color:black; max-width:100%; min-width:100px; width:100%;">
+                                <!-- Body copy -->
+                                <tr>
+                                    <td align="center" style="line-height: 1.6; padding: 10px;">
+                                        <h2 style="font-size: 20px;">Lorem ipsum</h2>
+                                        <p style="text-align: left; font-size:16px;">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                            anim id est laborum."</p>
+                                    </td>
+                                </tr>
+                                <!-- two column row -->
+                                <tr>
+                                    <td style="padding:15px;">
+                                        <!-- Left column -->
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="block"
+                                            role="presentation" width="48%">
+                                            <tr>
+                                                <td>
+                                                    <!-- put some poll here maybe-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Right column -->
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="block"
+                                            role="presentation" width="48%">
+                                            <tr>
+                                                <td style="line-height: 1.6;">
+                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
+                                                        Column 2
+                                                    </h2>
+                                                    <p style="text-align:left; font-size:14px; margin:0;">
+                                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                        sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- three column row -->
+                                <tr>
+                                    <td>
+                                        <!-- 1st column -->
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="block"
+                                            role="presentation" width="33%">
+                                            <tr>
+                                                <td style="line-height: 1.6; padding: 10px;">
+                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
+                                                        Column 1
+                                                    </h2>
+                                                    <p style="text-align:left; font-size:14px; margin:0;">
+                                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                        sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- 2nd column -->
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="block"
+                                            role="presentation" width="33%">
+                                            <tr>
+                                                <td style="line-height: 1.6; padding: 10px;">
+                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
+                                                        Column 2
+                                                    </h2>
+                                                    <p style="text-align:left; font-size:14px; margin:0;">
+                                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                        sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- 3rd column -->
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="block"
+                                            role="presentation" width="33%">
+                                            <tr>
+                                                <td style="line-height: 1.6; padding: 10px;">
+                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
+                                                        Column 3
+                                                    </h2>
+                                                    <p style="text-align:left; font-size:14px; margin:0;">
+                                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                        sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- Read more Button -->
+                                        <table align="center" border="0" cellspacing="0" cellpadding="0"
+                                            style="margin: 20px auto;">
+                                            <tr>
+                                                <td bgcolor="#0063af" style="border-radius:3px;">
+                                                    <a class="button" href="https://theofficedundermifflin.fandom.com/wiki/Ryan_Howard"
+                                                        target="_blank" style="font-size: 18px; font-weight: bold; color:#ffffff; text-decoration: none; border-radius: 3px; padding: 12px 18px;
+                                                                border: 1px solid #0063af; display: inline-block;">
+                                                        Read more
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="background-color:#DCE1E3;">
+                        <td>
+                            <!-- Footer content table-->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
+                                <!-- Footer information: Always include an unsubscribe link! -->
+                                <tr>
+                                    <td style="padding-top:25px;">
+                                        <!-- Left column footer -->
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            role="presentation" width="48%">
+                                            <tr>
+                                                <td>
+                                                    <img src="images/cheese_balls.jpg" alt="" width="50%"
+                                                        style="display: block; margin: 0 auto; max-width: 50%; min-width: 50%;" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- Right column footer -->
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0"
+                                            role="presentation" width="48%">
+                                            <tr>
+                                                <td style="font-size: 12px; line-height:1.6;">
+                                                    <p style="margin: 0 0 20px 0;">
+                                                        <span style="font-weight:bold;">Michael Scott Paper Company
+                                                            Inc.</span><br />
+                                                        1725 Slough Avenue.<br />
+                                                        <span style="font-style:italic;">165 square ft. Closet below
+                                                            Suite
+                                                            200</span><br />
+                                                        Scranton, PA
+                                                    </p>
+                                                    <a href="">Unsubscribe from mailing list &#58;&#40;</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
