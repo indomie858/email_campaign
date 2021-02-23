@@ -131,6 +131,31 @@
         }
 
         /* interactive elements */
+        table.press-release,
+        img.productImg,
+        label,
+        table.chooseRad {
+            transition: all 0.2s ease;
+        }
+
+        table.press-release:hover,
+        table.chooseRad:hover {
+            box-shadow: 10px, 12px, 24px, rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        img.productImg:hover {
+            box-shadow: 10px, 12px, 24px, rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+        }
+
+        label:hover {
+            background-color: #fd6350 !important;
+            border: 1px solid #fd6350 !important;
+            box-shadow: 0px, 12px, 24px, rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
         input {
             display: none;
         }
@@ -157,7 +182,7 @@
 <body id="body" style="margin: 0 !important; padding: 0 !important;">
 
     <!-- Main container table -->
-    <!-- Used this website as reference for table layout https://templates.mailchimp.com/development/html/ -->
+    <!-- Source for content: https://roboticassistancedevices.com/ -->
     <!-- Order of tables: fluid table, fixed table, fluid table, fixed table -->
     <table border="0" cellspacing="0" cellpadding="0" align="center" height="100%" width="100%"
         style="background-color: #004e7c;" role="presentation">
@@ -168,7 +193,7 @@
                     style="font-family:Arial, Helvetica, sans-serif; background-color:#ffffff; max-width: 600px;">
                     <!-- Header row -->
                     <tr style="background-color:#DCE1E3;">
-                        <td bgcolor="#DCE1E3"
+                        <td align="center" bgcolor="#DCE1E3"
                             background="https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2Fheroimage_blue.jpg?v=1613418194233"
                             style="padding:10px; background: #DCE1E3 url('https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2Fheroimage_blue.jpg?v=1613418194233'); background-size: 100%;">
                             <!-- Logo image -->
@@ -197,7 +222,8 @@
                                     <td align="center" bgcolor="#1e215a"
                                         background="https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2Fnistcyber_banner-11.19.18-am.png?v=1613422565424"
                                         style="color:#ffffff; padding: 20px; background: #1e215a url('https://cdn.glitch.com/45389867-8b82-4674-b240-2f82c25ce0d5%2Fnistcyber_banner-11.19.18-am.png?v=1613422565424'); background-size: 100%;">
-                                        <h1 style="font-size:25px; font-style: italic; text-align:center;">THE
+                                        <h1 class="fade" style="font-size:25px; font-style: italic; text-align:center;">
+                                            THE
                                             4<sup>th</sup> INDUSTRIAL REVOLUTION IS HERE</h1>
                                     </td>
                                 </tr>
@@ -213,7 +239,8 @@
                                             technology improves the simplicity and economics of patrolling and guard
                                             services, and allows experienced personnel to focus on more strategic tasks.
                                             Customers augment the capabilities of existing staffs and gain higher levels
-                                            of situational awareness, all at drastically reduced cost.</p>
+                                            of situational awareness, all at drastically reduced cost.
+                                        </p>
                                     </td>
                                 </tr>
 
@@ -221,10 +248,11 @@
                                 <!-- content source: https://roboticassistancedevices.com/about-us/ -->
                                 <tr>
                                     <td style="padding:10px;">
-                                        <h2 style="text-align: center; padding: 10px;">Why Choose RAD?</h2>
+                                        <h2 style="text-align: center; padding: 10px; font-size: 30px;">Why Choose RAD?
+                                        </h2>
                                         <!-- Left column -->
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="block"
-                                            role="presentation" width="28%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            class="block chooseRad" role="presentation" width="28%">
                                             <tr>
                                                 <td>
                                                     <img src="images/open-24-hours.png" alt="24 hours icon"
@@ -237,9 +265,9 @@
                                             role="presentation" width="68%">
                                             <tr>
                                                 <td style="line-height: 1.6;">
-                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
+                                                    <h3 style="font-size:16px; margin: 0 0 20px 0;">
                                                         Dedicated Service
-                                                    </h2>
+                                                    </h3>
                                                     <p style="text-align:left; font-size:14px; margin:0;">
                                                         24/7 support and service, no matter your location. We offer
                                                         multiple service options including Web, phone, onsite or remote
@@ -256,8 +284,8 @@
                                 <tr>
                                     <td style="padding:15px;">
                                         <!-- Left column -->
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="block"
-                                            role="presentation" width="28%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            class="block chooseRad" role="presentation" width="28%">
                                             <tr>
                                                 <td>
                                                     <img src="images/team.png" alt="Team icon"
@@ -270,9 +298,9 @@
                                             role="presentation" width="68%">
                                             <tr>
                                                 <td style="line-height: 1.6;">
-                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
+                                                    <h3 style="font-size:16px; margin: 0 0 20px 0;">
                                                         Experienced Team
-                                                    </h2>
+                                                    </h3>
                                                     <p style="text-align:left; font-size:14px; margin:0;">
                                                         When you choose a RAD solution, you can trust that our highly
                                                         dedicated support professionals will be there to help you each
@@ -289,8 +317,8 @@
                                 <tr>
                                     <td style="padding:15px;">
                                         <!-- Left column -->
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="block"
-                                            role="presentation" width="28%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            class="block chooseRad" role="presentation" width="28%">
                                             <tr>
                                                 <td>
                                                     <img src="images/robot.png" alt="Robot icon"
@@ -303,9 +331,9 @@
                                             role="presentation" width="68%">
                                             <tr>
                                                 <td style="line-height: 1.6;">
-                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
+                                                    <h3 style="font-size:16px; margin: 0 0 20px 0;">
                                                         Technology Leaders
-                                                    </h2>
+                                                    </h3>
                                                     <p style="text-align:left; font-size:14px; margin:0;">
                                                         Built by a team of security and robotics technology leaders with
                                                         more than 100 years combined industry management experience.
@@ -318,8 +346,9 @@
 
                                 <!-- product slides row -->
                                 <tr>
-                                    <td align="center" style="padding-top: 20px;">
-                                        <h2>Check out our Products!</h2>
+                                    <td align="center" style="padding-top: 25px;">
+                                        <h2 style="text-align: center; padding: 10px; font-size: 30px;">Check out our
+                                            Products!</h2>
                                         <!-- radio triggers for content -->
                                         <input type="radio" name="slides" id="slide1" checked>
                                         <input type="radio" name="slides" id="slide2">
@@ -339,32 +368,33 @@
                                         <label for="slide5" class="slide-label"
                                             style="border: 2px solid #0BA9B5; background-color: #0BA9B5; color: #ffffff; font-weight:bold; font-size: 18px; display: inline-block; margin: 10px; padding: 10px 20px;">WALLY</label>
                                         <label for="slide6" class="slide-label"
-                                            style="border: 2px solid #0BA9B5; background-color: #0BA9B5; color: #ffffff; font-weight:bold; font-size: 18px; display: inline-block; margin: 10px; padding: 10px 20px;">WALLY HSO</label>
+                                            style="border: 2px solid #0BA9B5; background-color: #0BA9B5; color: #ffffff; font-weight:bold; font-size: 18px; display: inline-block; margin: 10px; padding: 10px 20px;">WALLY
+                                            HSO</label>
 
                                         <!-- slide content -->
-                                        <div class="slide slide1" style="background-color: #aeaeae; padding: 20px;">
+                                        <div class="slide slide1" style="background-color: #a0cfd3; padding: 20px;">
                                             <h3>Rugged Observation Assistance Mobile Electronic Officer</h3>
-                                            <img src="images/roameo.png" alt="ROAMEO">
+                                            <img src="images/roameo.png" alt="ROAMEO" class="productImg">
                                         </div>
-                                        <div class="slide slide2" style="background-color: #aeaeae; padding: 20px;">
+                                        <div class="slide slide2" style="background-color: #a0cfd3; padding: 20px;">
                                             <h3>Autonomous Verified Access</h3>
-                                            <img src="images/ava.gif" alt="AVA">
+                                            <img src="images/ava.gif" alt="AVA" class="productImg">
                                         </div>
-                                        <div class="slide slide3" style="background-color: #aeaeae; padding: 20px;">
+                                        <div class="slide slide3" style="background-color: #a0cfd3; padding: 20px;">
                                             <h3>Responsive Observation Security Agent</h3>
-                                            <img src="images/rosa.gif" alt="ROSA">
+                                            <img src="images/rosa.gif" alt="ROSA" class="productImg">
                                         </div>
-                                        <div class="slide slide4" style="background-color: #aeaeae; padding: 20px;">
+                                        <div class="slide slide4" style="background-color: #a0cfd3; padding: 20px;">
                                             <h3>Security Control Observation Tower</h3>
-                                            <img src="images/scot.gif" alt="SCOT">
+                                            <img src="images/scot.gif" alt="SCOT" class="productImg">
                                         </div>
-                                        <div class="slide slide5" style="background-color: #aeaeae; padding: 20px;">
+                                        <div class="slide slide5" style="background-color: #a0cfd3; padding: 20px;">
                                             <h3>Wall Mounted Version of SCOT</h3>
-                                            <img src="images/wally.gif" alt="WALLY">
+                                            <img src="images/wally.gif" alt="WALLY" class="productImg">
                                         </div>
-                                        <div class="slide slide6" style="background-color: #aeaeae; padding: 20px;">
+                                        <div class="slide slide6" style="background-color: #a0cfd3; padding: 20px;">
                                             <h3>Health Screening the RAD Way</h3>
-                                            <img src="images/wally-hso.gif" alt="WALLY HSO">
+                                            <img src="images/wally-hso.gif" alt="WALLY HSO" class="productImg">
                                         </div>
                                     </td>
                                 </tr>
@@ -375,8 +405,7 @@
                                             style="margin: 10px auto;">
                                             <tr>
                                                 <td style="border-radius:3px;">
-                                                    <a class="button"
-                                                        href="https://roboticassistancedevices.com/"
+                                                    <a class="button" href="https://roboticassistancedevices.com/"
                                                         target="_blank" style="background-color: #0063af; font-size: 18px; font-weight: bold; color:#ffffff; text-decoration: none; border-radius: 3px; padding: 12px 18px;
                                                                 border: 1px solid #0063af; display: inline-block;">
                                                         Click here for more information
@@ -390,71 +419,106 @@
                                 <!-- three column row -->
                                 <tr>
                                     <td>
+                                        <h2 style="text-align: center; padding: 10px; font-size: 30px;">Recent News</h2>
                                         <!-- 1st column -->
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="block"
-                                            role="presentation" width="33%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            class="block press-release" role="presentation" width="33%">
                                             <tr>
                                                 <td style="line-height: 1.6; padding: 10px;">
-                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
-                                                        Column 1
-                                                    </h2>
+                                                    <h3 style="font-size:16px; margin: 0 0 20px 0;">
+                                                        Robotic Assistance Devices Indicates that Momentum for Products
+                                                        Accelerates – Receives Multiple Orders‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬‬
+                                                    </h3>
                                                     <p style="text-align:left; font-size:14px; margin:0;">
-                                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                        sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                        Henderson, Nevada, February 12, 2021 — Artificial Intelligence
+                                                        Technology Solutions, Inc., (OTCPK:AITX), today announced that
+                                                        its wholly-owned subsidiary Robotic Assistance Devices (RAD) is
+                                                        experiencing an acceleration of activity and demand across all
+                                                        product offerings. In late January, through a press...
                                                     </p>
+                                                    <!-- Read more Button -->
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0"
+                                                        style="margin: 10px auto;">
+                                                        <tr>
+                                                            <td style="border-radius:3px;">
+                                                                <a class="button"
+                                                                    href="https://roboticassistancedevices.com/robotic-assistance-devices-indicates-that-momentum-for-products-accelerates-receives-multiple-orders"
+                                                                    target="_blank" style="background-color: #0063af; font-size: 14px; font-weight: bold; color:#ffffff; text-decoration: none; border-radius: 3px; padding: 10px 15px;
+                                                                    border: 1px solid #0063af; display: inline-block;">
+                                                                    Read more
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
                                         <!-- 2nd column -->
-                                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="block"
-                                            role="presentation" width="33%">
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                            class="block press-release" role="presentation" width="32%">
                                             <tr>
                                                 <td style="line-height: 1.6; padding: 10px;">
-                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
-                                                        Column 2
-                                                    </h2>
+                                                    <h3 style="font-size:16px; margin: 0 0 20px 0;">
+                                                        Robotic Assistance Devices Announces that 2021 is off to a Great
+                                                        Start
+                                                    </h3>
                                                     <p style="text-align:left; font-size:14px; margin:0;">
-                                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                        sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                        Henderson, Nevada, January 28, 2021 — Artificial Intelligence
+                                                        Technology Solutions, Inc., (OTCPK:AITX), today announced that
+                                                        its wholly-owned subsidiary Robotic Assistance Devices (RAD) is
+                                                        experiencing strong demand and positive sales activities as
+                                                        calendar year 2021 begins. RAD previously announced through a...
                                                     </p>
+                                                    <!-- Read more Button -->
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0"
+                                                        style="margin: 10px auto;">
+                                                        <tr>
+                                                            <td style="border-radius:3px;">
+                                                                <a class="button"
+                                                                    href="https://roboticassistancedevices.com/press-release/"
+                                                                    target="_blank" style="background-color: #0063af; font-size: 14px; font-weight: bold; color:#ffffff; text-decoration: none; border-radius: 3px; padding: 10px 15px;
+                                                                    border: 1px solid #0063af; display: inline-block;">
+                                                                    Read more
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
                                         <!-- 3rd column -->
-                                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="block"
-                                            role="presentation" width="33%">
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0"
+                                            class="block press-release" role="presentation" width="32%">
                                             <tr>
                                                 <td style="line-height: 1.6; padding: 10px;">
-                                                    <h2 style="font-size:16px; margin: 0 0 20px 0;">
-                                                        Column 3
-                                                    </h2>
+                                                    <h3 style="font-size:16px; margin: 0 0 20px 0;">
+                                                        Robotic Assistance Devices Receives Opening Order From Civitas
+                                                        Group, RAD’s Recently Signed Dealer in Romania
+                                                    </h3>
                                                     <p style="text-align:left; font-size:14px; margin:0;">
-                                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                                        sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                                        Henderson, Nevada, January 13, 2021 — Artificial Intelligence
+                                                        Technology Solutions, Inc., (OTCPK:AITX), today announced that
+                                                        its wholly owned subsidiary Robotic Assistance Devices (RAD) has
+                                                        received an opening purchase agreement from Civitas PSG, one of
+                                                        the largest security companies in Romania...
                                                     </p>
+                                                    <!-- Read more Button -->
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0"
+                                                        style="margin: 10px auto;">
+                                                        <tr>
+                                                            <td style="border-radius:3px;">
+                                                                <a class="button"
+                                                                    href="https://roboticassistancedevices.com/press-release/"
+                                                                    target="_blank" style="background-color: #0063af; font-size: 14px; font-weight: bold; color:#ffffff; text-decoration: none; border-radius: 3px; padding: 10px 15px;
+                                                                    border: 1px solid #0063af; display: inline-block;">
+                                                                    Read more
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
                                             </tr>
                                         </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-
                                     </td>
                                 </tr>
                             </table>
