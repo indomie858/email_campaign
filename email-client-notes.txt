@@ -1,0 +1,33 @@
+NOTE: I created a pdf document with all of these notes and screenshots. It's in the assets directory. The file is called email-client-notes.pdf
+
+Here's a link to the PDF just in case: https://cdn.glitch.com/1b0f57c2-deb2-4880-94af-1d8e383422eb%2Femail-clients-notes.pdf?v=1614307106029
+
+
+gmail
+-all background images are shown
+-slides using checked box technique doesn't appear, but buttons are still there
+-buttons and links change color when you hover, but does not shift up like it should; ignores transform on hover
+-all images are the correct size
+-looks good on mobile
+
+
+outlook
+-ignores img stylings
+-ignores background imgs in table layout
+-border/padding table button styles don't work
+-radio label buttons aren't clickable
+  -the slides sometimes shows but when it does, it gets stuck on the first slide
+-ignores button/link interativity
+
+
+apple mail
+-looks great on mobile
+-(mobile version) almost everything in my email works in apple mail
+-(desktop browser) everything works correctly as it does when you open the html file in a browser
+-fade in animation works
+-formatting/styling is correct
+-all background images are shown
+-correct size images
+-(mobile version) slides using checked box/radio technique doesn't appear, but buttons are still there
+-(desktop browser version) slides and radio buttons appear and are fully functional
+-buttons and links have correct styling/interactivity
